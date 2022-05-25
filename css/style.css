@@ -30,6 +30,8 @@ body {
   right: 0;
   left: 0;
   top: 0;
+
+  z-index: 9999;
 }
 
 #header .header__logo {
@@ -677,7 +679,7 @@ body {
     justify-content: space-around;
     height: 6em;
   }
-
+/*  */
   #footer>* {
     font-size: 12px;
     margin: 0;
@@ -805,3 +807,73 @@ body {
   }
 
 }
+
+/*========================== 
+  ANIMACIONES Y TRANSICIONES
+  ==========================
+ */
+
+ /* hover botón "conocer más" (index) */
+ #index__main .main__boton{
+   transition: transform .25s ease-out;
+}
+
+#index__main .main__boton:hover {
+  transform: scale(1.08);
+}
+
+/* hover links header (para todas las páginas)*/
+#header .header__nav__ul__li{
+  transition: all .15s ease-in;
+}
+
+#header .header__nav__ul__li:hover{
+  transform: translate(0, -25%);
+}
+
+/* hover boton card (servicios)*/
+#servicios__main .main__card__container .card .card__btn a{
+  transition: transform .2s ease-out;
+  transition-delay: 150ms;
+}
+
+#servicios__main .main__card__container .card .card__btn a:hover{
+  transform: scale(1.08);
+}
+
+/* animaciones en contactos (contactos) */
+
+/* boton email */
+#contacto__main .seccion__email .boton__enviar{
+  transition: all .3s ease-out;
+}
+
+#contacto__main .seccion__email .boton__enviar:hover{
+  transform: scale(1.10);
+  box-shadow: 1px 1px 7px 1px #09090b45;
+}
+
+/* redes sociales */
+#contacto__main .seccion__redes-sociales .icon__container .icon{
+   transition: all .25s ease-out;
+   transition-delay: 100ms;
+}
+
+#contacto__main .seccion__redes-sociales .icon__container .icon:hover{
+   transform: scale(1.09) translate(0, -1rem);
+}
+
+/* mapa iframe */
+#contacto__main .seccion__mapa .maps__iframe{
+  transition: all .25s ease-out;
+  transition-delay: 100ms;
+}
+
+#contacto__main .seccion__mapa .maps__iframe:hover{
+  transform: scale(1.08);
+}
+
+
+
+
+
